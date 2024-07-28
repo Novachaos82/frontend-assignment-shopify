@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "garamond";
+  src: url("ITCGaramondStd-BkCond.woff2")format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alpina";
+  src: url("GT-Alpina-Typewriter-Regular-Trial.woff2")format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "alpina";
+  src: url("./assets/fonts/GT-Alpina/GT-Alpina-Typewriter-Light-Trial.otf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+
+/* tab - group */
+.active-tab{
+  background:  #3c422e;
+  color: #f6e6d9
+}
+
+.content-active{
+  display: flex;
+}
+
+.active-card{
+  background: #9eef80
+}
+/* cards */
+.active-sub-option{
+  background: #9eef80;
+}
+
+
+/* gallery */
+
+.gallery {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.gallery-slider {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.gallery-slider .swiper-slide img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+
+
+
+
+
+.thumbnail-active {
+  border: 1px solid white;
+}

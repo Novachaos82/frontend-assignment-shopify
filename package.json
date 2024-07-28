@@ -1,0 +1,23 @@
+{
+  "name": "frontend-assignment-shopify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+    "dev": "shopify theme dev -s 2e1565-ff.myshopify.com",
+    "shopify:dev": "shopify theme dev",
+    "build": "vite build --minify",
+    "watch": "vite build --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "vite": "^5.3.5"
+  }
+}

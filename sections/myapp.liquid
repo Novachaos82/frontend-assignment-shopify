@@ -1,0 +1,225 @@
+{% schema %}
+{ "name":"Index" ,"settings":[],"presets": [{"name":"Index"}] }
+{% endschema %}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ 'styles.css' | asset_url }}" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" defer src="{{ 'main.js' | asset_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>{{ page_title }}</title>
+  </head>
+ <body>
+  
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        <img src={{ 'graza-logo.webp' | asset_url }} class="absolute w-[46px]  lg:w-[120px] top-4 left-4  z-20"/>
+
+        <!-- left section -->
+      <section class="w-full lg:w-1/2 mx-auto text-center">
+          <div class="gallery">
+            <div class="swiper-container gallery-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src={{ '1.webp' | asset_url }} alt="Image 1" class="carousel-image lg:min-h-screen object-cover" /></div>
+                    <div class="swiper-slide"><img src={{ '2.webp' | asset_url }} alt="Image 2" class="carousel-image lg:min-h-screen object-cover" /></div>
+                    <div class="swiper-slide"><img src={{ '3.webp' | asset_url }} alt="Image 3" class="carousel-image lg:min-h-screen object-cover" /></div>
+                    <div class="swiper-slide"><img src={{ '4.webp' | asset_url }} alt="Image 4" class="carousel-image lg:min-h-screen object-cover" /></div>
+                    <div class="swiper-slide"><img src={{ '5.webp' | asset_url }} alt="Image 5" class="carousel-image lg:min-h-screen object-cover" /></div>
+                    <div class="swiper-slide"><img src={{ '6.webp' | asset_url }} alt="Image 6" class="carousel-image lg:min-h-screen object-cover" /></div>
+                </div>
+
+            </div>
+            
+            <div class="z-0  lg:block absolute left-3 bottom-28 lg:z-10">
+                <div class=" flex flex-col gap-3">
+                    <div class="swiper-slide"><img src={{ '1.webp' | asset_url }} alt="Thumbnail 1" class="thumbnail cursor-pointer w-16 h-16  border-black border-[1px] rounded-full" /></div>
+                    <div class="swiper-slide"><img src={{ '2.webp' | asset_url }} alt="Thumbnail 2" class="thumbnail cursor-pointer w-16 h-16  border-black border-[1px] rounded-full" /></div>
+                    <div class="swiper-slide"><img src={{ '3.webp' | asset_url }} alt="Thumbnail 3" class="thumbnail cursor-pointer w-16 h-16  border-black border-[1px] rounded-full" /></div>
+                    <div class="swiper-slide"><img src={{ '4.webp' | asset_url }} alt="Thumbnail 4" class="thumbnail cursor-pointer w-16 h-16  border-black border-[1px] rounded-full" /></div>
+                    <div class="swiper-slide"><img src={{ '5.webp' | asset_url }} alt="Thumbnail 5" class="thumbnail cursor-pointer w-16 h-16  border-black border-[1px] rounded-full" /></div>
+                    <div class="swiper-slide"><img src={{ '6.webp' | asset_url }} alt="Thumbnail 6" class="thumbnail cursor-pointer w-16 h-16  border-black border-[1px] rounded-full aspect-square" /></div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+      </section>
+      <!-- right section -->
+      <section class="w-full lg:w-1/2 bg-[#f6e6d9] flex flex-col items-center justify-center gap-10">
+          <div class="space-y-4">
+              <div class="flex flex-col items-center font-garamond font-bold text-[42px] leading-9 mt-12 lg:text-[3.5rem] gap-0 text-[#3c422e] lg:leading-[2.75rem] lg:mt-0 ">
+                  <span >"Drizzle" & "Sizzle"</span>
+                  <span class="underline "> Extra Virgin Olive Oil </span>
+              </div>
+              <div class="flex items-center justify-center gap-4 text-[1rem] text-[#3c422e]">
+                  <div>★★★★★</div>
+                  <span class="font-alpina">881 reviews</span>
+              </div>
+          </div>
+          <!-- quantity box -->
+          <div class="w-full md:w-[95%]  xl:w-[80%] lg:rounded-2xl flex flex-col gap-3 bg-[#FFF4ec] border-[#3C422E] border-solid border-[1px] p-6 font-alpina ">
+        <!-- Heading & Cards -->
+              <fieldset>
+                <legend class="font-medium">Quantity</legend>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-5 mt-4">
+                    <div class="set-card min-h-fit flex flex-col justify-start items-center border-[1px] border-black rounded-xl transition-all duration-200">
+                        <input class="hidden" type="radio" id="1Set" name="option2">
+                        <label for="1Set" class=" flex flex-col justify-center w-full h-full cursor-pointer ">
+                            <div class="discount flex flex-col justify-center items-center bg-[#3c422e] text-[#fff4ec] text-[10px] rounded-t-xl px-2 h-fit">
+                                <span class="free-shipping"></span>
+                                <span class="discount-offer"></span>
+                            </div>
+                            <strong class="flex flex-col justify-center items-center text-center py-4 px-4 h-fit">
+                                <span class="font-medium text-[20px] leading-none">1</span>
+                                <span class="font-medium text-[12px]">Set</span>
+                            </strong>
+                        </label>
+                    </div>
+                    
+                    <div class="set-card min-h-fit flex flex-col justify-start items-center border-[1px] border-black rounded-xl transition-all duration-200">
+                        <input class="hidden" type="radio" id="2Set" name="option2">
+                        <label for="2Set" class=" flex flex-col justify-center w-full h-full cursor-pointer">
+                            <div class="discount flex flex-col justify-center items-center bg-[#3c422e] text-[#fff4ec] text-[10px] rounded-t-xl px-2 h-fit">
+                                <span class="free-shipping">Free shipping</span>
+                                <span class="discount-offer">+5% off</span>
+                            </div>
+                            <strong class="flex flex-col justify-center items-center text-center py-4 px-4 h-fit">
+                                <span class="font-medium text-[20px] leading-none">2</span>
+                                <span class="font-medium text-[12px]">Set</span>
+                            </strong>
+                        </label>
+                    </div>
+                    
+                    <div class="set-card min-h-fit flex flex-col justify-start items-center border-[1px] border-black rounded-xl transition-all duration-200">
+                        <input class="hidden" type="radio" id="3Set" name="option2">
+                        <label for="3Set" class="  flex flex-col justify-center w-full h-full cursor-pointer">
+                            <div class="discount flex flex-col justify-center items-center bg-[#3c422e] text-[#fff4ec] text-[10px] rounded-t-xl px-2 h-fit">
+                                <span class="free-shipping">Free shipping</span>
+                                <span class="discount-offer">+5% off</span>
+                            </div>
+                            <strong class="flex flex-col justify-center items-center text-center py-4 px-4 h-fit">
+                                <span class="font-medium text-[20px] leading-none">3</span>
+                                <span class="font-medium text-[12px]">Set</span>
+                            </strong>
+                        </label>
+                    </div>
+                    
+                    <div class="set-card min-h-fit flex flex-col justify-start items-center border-[1px] border-black rounded-xl transition-all duration-200">
+                        <input class="hidden" type="radio" id="4Set" name="option2">
+                        <label for="4Set" class="  flex flex-col justify-center w-full h-full cursor-pointer">
+                            <div class="discount flex flex-col justify-center items-center bg-[#3c422e] text-[#fff4ec] text-[10px] rounded-t-xl px-2 h-fit">
+                                <span class="free-shipping">Free shipping</span>
+                                <span class="discount-offer">+5% off</span>
+                            </div>
+                            <strong class="flex flex-col justify-center items-center text-center py-4 px-4 h-fit">
+                                <span class="font-medium text-[20px] leading-none">4</span>
+                                <span class="font-medium text-[12px]">Set</span>
+                            </strong>
+                        </label>
+                    </div>
+                </div>
+              </fieldset>
+
+              <!-- Purchase/Subscribe Radio Button  -->
+              <div>
+                  <div class="flex justify-between items-center border-dashed border-y-[1px] border-black py-4">
+                      <div class="flex gap-4">
+                          <input type="radio" id="one-time" name="subscription-type" class="subscription-radio-button hidden" />
+                          <label for="one-time" class="font-alpina font-medium flex gap-3 cursor-pointer">
+                            <div class="sub-type-check active-sub-option w-[24px] aspect-square rounded-full border-[1px] border-black">
+                            </div>
+
+                              <p>One Time Purchase</p>
+                          </label>
+                      </div>
+                      <div class="font-alpina font-medium text-[14px]" id="one-time-price">
+                          $37
+                      </div>
+                  </div>
+                  <div class="flex justify-between items-center border-dashed border-b-[1px] border-black py-4">
+                      <div class="flex gap-4 ">
+                          <input type="radio" id="subscribe-save" name="subscription-type" class="subscription-radio-button hidden" />
+                          <label for="subscribe-save" class="font-alpina font-medium flex gap-3 cursor-pointer">
+                              <div class="sub-type-check  w-[24px] aspect-square rounded-full border-[1px] border-black ">
+                            </div>
+                              <p>Subscribe & Save</p>
+                          </label>
+                      </div>
+                      <div class="font-alpina font-medium text-[14px]" id="subscribe-save-price">
+                          $33
+                      </div>
+                  </div>
+              </div>
+              <div class=" w-full rounded-3xl  bg-black  transition-all duration-200">
+                  <button class="w-full rounded-3xl p-2 bg-[#d1e030] -translate-y-[4px] -translate-x-[4px] hover:translate-x-0 hover:translate-y-0 border-[1px] border-black transition-all duration-200">
+                      
+                      
+                      <span class="add-to-card-price"> Add to cart - $37</span>
+                  </button>
+              </div>
+              
+              <p class="text-center text-[#726363] underline text-[1rem] cursor-pointer">
+                  Skip or cancel Anytime
+              </p>
+          </div>
+          <!-- tab group -->
+          <div class="w-[90%]  lg:w-[80%] font-alpina">
+              <div class="w-full text-xs lg:text-[16px] lg:leading-7">
+                  <div class="flex uppercase bold min-w-full text-sm lg:text-[18px] font-bold">
+                    <!-- tab - buttons -->
+                      <span class="active-tab tab-heading  border-t-[1px] border-s-[1px] border-black border-solid px-2 py-2 rounded-t-xl flex-1 text-center cursor-pointer"> Description </span>
+                      <span class="tab-heading border-t-[1px] border-s-[1px] border-black border-solid px-2 py-2 rounded-t-xl flex-1 text-center cursor-pointer"> Harvest </span>
+                      <span class="tab-heading border-t-[1px] border-l-[1px] border-r-[1px] border-black border-solid px-2 py-2 rounded-t-xl flex-1 text-center cursor-pointer">Use Cases</span>
+                  </div>
+                  <!--tab content -->
+          <div class="tab-content content-active flex-col gap-3 border-[1px] border-black border-solid p-2 rounded-b-xl">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="font-alpina font-bold ">DRIZZLE: 500ml</h2>
+                        <p class="font-light">Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, not heating.</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h2 class=" font-alpina font-bold">SIZZLE: 750ml</h2>
+                        <p class="font-light">Extra Virgin cooking oil made from mature, mid-season olives that yield a more mellow flavor. Use it every day, in every way.</p>
+                    </div>
+                    </div>
+
+                  
+                  <div class="tab-content hidden  flex-col gap-3 border-[1px] border-black border-solid p-2  rounded-b-xl ">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="font-alpina font-bold ">  DRIZZLE: </h2>
+                        <p class="font-light"> Harvested in October, before the olives have ripened fully. Picked by hand because young olives need a firm yank to loosen up.</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h2 class=" font-alpina font-bold"> SIZZLE: </h2>
+                        <p class="font-light"> Harvested in November and December, when the olives are more mature. They’re pretty laid back by this point, so it only takes a few shakes to get them off the branch.</p>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-content hidden flex-col gap-3 border-[1px] border-black border-solid p-2  rounded-b-xl ">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="font-alpina font-bold ">  DRIZZLE: </h2>
+                        <p class="font-light"> A little Drizzle goes a long way! Put it on your ice cream or popcorn, whip up a pesto or salad dressing, or drink it straight from a spoon (we won’t tell).</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h2 class=" font-alpina font-bold"> SIZZLE: </h2>
+                        <p class="font-light">  If you would put it in or on top of an oven, use Sizzle. Chicken cutlets, sheet pan veggies, fried rice, or even chocolate chip cookies! You name it, Sizzle Sizzles it.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  
+    
+  </body>
+</html>
