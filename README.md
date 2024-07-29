@@ -10,7 +10,8 @@
      assets/main.js: Javscript file for the page
 
 # Getting Started
-- To run the project locally, use the following command:
+- To run the project locally, use the following command:-
   
       npm run dev or pnpm run dev
+    
 
